@@ -4,3 +4,7 @@ yadisk: https://disk.yandex.ru/d/M6qIHErapFcDrw
 bd: anniekoa_otzhig
 log: anniekoa_otzhig
 pass: umZmd8F%
+
+wp
+log: admin
+pass: 67KaV3k9z4ze$XExlh
