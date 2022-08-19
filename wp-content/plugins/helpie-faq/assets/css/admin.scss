@@ -1,0 +1,81 @@
+@import "./pages/_insights.scss";
+@import "./components/_modal.scss";
+@import "./components/faq_groups";
+
+.helpie_faq__woo-metabox {
+	.meta-control {
+		display: flex;
+		align-items: center;
+	}
+}
+
+$primary-color: #5cb85c;
+
+.helpie-notice {
+	& .success-button {
+		background: $primary-color;
+		border-color: $primary-color;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 0 $primary-color;
+		color: #fff;
+		text-shadow: 0 -1px 1px $primary-color, 1px 0 1px $primary-color,
+			0 1px 1px $primary-color, -1px 0 1px $primary-color;
+		display: inline-block;
+		text-decoration: none !important;
+		padding: 5px 20px;
+	}
+}
+
+.wp-pointer-content {
+	& img {
+		width: 100%;
+	}
+}
+
+.helpie-disabled {
+	cursor: pointer;
+
+	.csf-fieldset {
+		.csf--switcher {
+			opacity: 0.3;
+		}
+	}
+}
+
+// Below Styles Only applies of CSF Setting page.
+// For: Mock Data Images
+.hfaq-csf-mock-data-wrapper {
+	& .csf-fieldset {
+		& .csf--image-group {
+			& .csf--image {
+				& img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.csf-field.helpie-display-none {
+	display: none;
+}
+
+.helpiefaq {
+	&__premiumTag {
+		margin-left: 3px !important;
+		color: #ffffff !important;
+		background-color: #f1ac2e !important;
+		font-size: 10px !important;
+		font-weight: 600 !important;
+		letter-spacing: 0.5px !important;
+		padding: 3px 4px !important;
+	}
+
+	&__groupContainer {
+		display: flex;
+
+		#edittag,
+		#addtag {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+$font-size: 13px;
+
+.helpie-notices {
+	padding: 5px 15px;
+	border-radius: 4px;
+	font-size: $font-size;
+
+	&--info {
+		background-color: #b3d4ff;
+		border: 1px solid #0747a6;
+		color: #0747a6;
+
+		& .helpie-notices__link {
+			color: #0052cc;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+	}
+
+	&--danger {
+		background-color: #f8d7da;
+		border: 1px solid #c80013;
+		color: #721c24;
+
+		& .helpie-notices__link {
+			color: #de350b;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+	}
+
+	& p.helpie-notices__text {
+		margin: 0px;
+		font-size: $font-size;
+	}
+}

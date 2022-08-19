@@ -1,0 +1,47 @@
+@import "./../components/_variables.scss";
+@import "./../components/_tab.scss";
+@import "./../components/_cards.scss";
+
+.helpie-faq.dashboard {
+	& p.submit {
+		text-align: right;
+		padding: 20px;
+
+		& .delete {
+			background: $red;
+			color: white;
+			border-color: $red;
+		}
+	}
+
+	& section#content-tease {
+		display: block !important;
+		padding: 20px;
+		border-top: 3px solid #abc;
+
+		& .helpie-notice.notice-success {
+			margin: 8px 0px !important;
+		}
+		& img {
+			width: 100%;
+		}
+	}
+
+	.ct-series-a .ct-line,
+	.ct-series-a .ct-point {
+		stroke: $color1;
+	}
+
+	.ct-series-a .ct-area {
+		fill: $color1;
+	}
+
+	.ct-series-b .ct-line,
+	.ct-series-b .ct-point {
+		stroke: $color2;
+	}
+
+	.ct-series-b .ct-area {
+		fill: $color2;
+	}
+}

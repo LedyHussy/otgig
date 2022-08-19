@@ -1,0 +1,31 @@
+.helpie-faq.accordions {
+	margin: 0 auto;
+	width: 100%;
+	-webkit-transform: none !important;
+	-moz-transform: none !important;
+	-ms-transform: none !important;
+	-o-transform: none !important;
+	transform: none !important;
+	opacity: 1; // Fix Flatsome theme CSS Conflicts
+
+	@import "./../base/_reset.scss";
+	@import "./../../../lib/stylus/css/accordion/_accordion.scss";
+	@import "./../../../lib/stylus/css/accordion/_light-theme.scss";
+
+	&.dark {
+		@import "./../../../lib/stylus/css/accordion/_dark-theme.scss";
+	}
+
+	@import "./../../../lib/stylus/css/search/_search.scss";
+	@import "./../../../lib/stylus/css/form/_form.scss";
+
+	& .collection-title {
+		margin-bottom: 20px;
+	}
+
+	@import "./pagination.scss";
+}
+
+@import "./../../../lib/stylus/css/message/_success.scss";
+
+@import "./notices.scss";

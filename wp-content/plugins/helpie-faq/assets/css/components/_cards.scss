@@ -1,0 +1,211 @@
+@import "variables.scss";
+
+.helpie-faq.dashboard {
+	background: #f4f7fc;
+	// .flex-grid {
+	//     display: grid;
+	//     grid-template-columns: 1fr 1fr 1fr 1fr;
+	//   }
+
+	h2 {
+		text-align: center;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.column {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+		width: 50%;
+	}
+
+	//   .col {
+	//     display: flex;
+	//     flex-direction: column;
+	//     flex-basis: 100%;
+	//     flex: 1;
+	//   }
+
+	@mixin clear() {
+		&:before,
+		&:after {
+			content: " ";
+			display: table;
+		}
+
+		&:after {
+			clear: both;
+		}
+	}
+
+	.card-list {
+		@include clear();
+		width: 100%;
+	}
+
+	.card {
+		border-radius: 8px;
+		color: white;
+		padding: 10px;
+		position: relative;
+		min-width: auto;
+		max-width: initial;
+		margin: 15px;
+		flex: 1;
+
+		.zmdi {
+			color: white;
+			font-size: 28px;
+			opacity: 0.3;
+			position: absolute;
+			right: 13px;
+			top: 13px;
+		}
+
+		.stat {
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
+			font-size: 14px;
+			margin-top: 25px;
+			padding: 10px 10px 0;
+			text-transform: uppercase;
+
+			&.increase {
+				color: #59ae31;
+			}
+
+			&.decrease {
+				color: #c2332c;
+			}
+		}
+
+		.title {
+			display: inline-block;
+			font-size: 12px;
+			padding: 10px 10px 0;
+			text-transform: uppercase;
+		}
+
+		&.blue {
+			background-color: #2298f1;
+		}
+
+		&.green {
+			background-color: #66b92e;
+		}
+
+		&.orange {
+			background-color: #da932c;
+		}
+
+		&.red {
+			background-color: #d65b4a;
+		}
+	}
+
+	& .stat-card {
+		text-align: center;
+		color: #888;
+
+		& .value {
+			color: #333;
+		}
+	}
+
+	& .stat-icon {
+		border-radius: 25px;
+		// border: solid 1px #ccc;
+		background: #e5f3fe;
+		// width: 25px;
+		// height: 25px;
+		display: inline-block;
+		margin: 10px auto;
+		padding: 10px;
+
+		& i {
+			color: #1584fb;
+			font-size: 18px;
+			margin-top: 3px;
+			margin-left: 3px;
+		}
+	}
+}
+
+.helpie-faq.dashboard .stat-card {
+	& .value {
+		font-size: 48px;
+		line-height: 1;
+		font-weight: bold;
+		padding: 0 10px;
+	}
+
+	&.click {
+		& .title {
+			color: $color1;
+		}
+
+		& .stat-icon {
+			background: lighten($color1, 40%);
+		}
+
+		& .stat-icon i {
+			color: $color1;
+		}
+	}
+
+	&.search {
+		& .title {
+			color: $color2;
+		}
+
+		& .stat-icon {
+			background: lighten($color2, 30%);
+		}
+
+		& .stat-icon i {
+			color: $color2;
+		}
+	}
+}
+
+/* Frequent List Card */
+.helpie-faq.dashboard {
+	& .most-frequent .card {
+		font-size: 14px;
+		color: #666;
+
+		& .label,
+		& .value {
+			margin: 10px;
+		}
+		& .label {
+			flex-grow: 1;
+			text-transform: capitalize;
+		}
+
+		& .card-title {
+			text-align: center;
+			color: #666;
+			letter-spacing: 0.5px;
+			font-size: 16px;
+			text-transform: capitalize;
+		}
+
+		&.click {
+			& .card-title {
+				color: $color1;
+			}
+		}
+
+		&.search {
+			& .card-title {
+				color: $color2;
+			}
+		}
+	}
+}

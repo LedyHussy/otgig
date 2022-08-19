@@ -1,0 +1,80 @@
+$background-color: transparent;
+$highlight-color: rgb(150, 150, 235);
+$border-color: #ddd;
+$text-color: #606060;
+$highlight-text-color: #fff;
+
+div.helpie-faq__pagination {
+	margin-bottom: 50px;
+	width: 100%;
+	overflow: auto;
+
+	&--hide{
+		display: none;
+	}
+
+    &.helpie-faq__pagination-positions{
+        &--left{
+            text-align: left;
+        }
+        &--right{
+            text-align: right;
+        }
+        &--center{
+            text-align: center;
+        }
+    }
+
+	ul.helpie-faq__pagination__list {
+		display: flex;
+		flex: 1;
+
+		list-style: none;
+		margin: 0px;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+
+		li.helpie-faq__pagination__listItem {
+			list-style: none;
+			display: inline;
+			padding-left: 0px;
+			cursor: pointer;
+			float: left;
+			margin: 0px;
+
+			a.helpie-faq__pagination__listItem--anchor {
+				background: $background-color;
+				border: 1px solid $border-color;
+				padding: 5px 10px;
+				margin-left: 3px;
+				cursor: pointer;
+				border-radius: 0px;
+				color: $text-color;
+				font-weight: 400;
+				text-decoration: none;
+				text-transform: capitalize;
+				display: inline-block;
+				text-align: center;
+				word-break: normal;
+				line-height: 1.6875rem;
+				text-decoration: none !important; // Neve fix
+				box-shadow: none; // Twenty seventeen Fix
+				&.active,
+				&:hover {
+					background-color: $highlight-color;
+					border: 1px solid $highlight-color;
+					color: $highlight-text-color;
+				}
+
+				@media only screen and (max-width: 600px) {
+					&:hover {
+						background-color: $background-color;
+						border: 1px solid $border-color;
+						color: $text-color;
+					}
+				}
+			}
+		}
+	}
+}

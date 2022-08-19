@@ -1,0 +1,184 @@
+.helpie-faq-groups {
+	width: 100% !important;
+}
+
+.hfaq-full-width {
+	width: 100% !important;
+}
+// FAQ-Groups Summary Table Shortcode Columns Styles
+.helpie-faq-group {
+	display: inline-block;
+	padding: 1px 5px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	background: #ebebeb;
+
+	& .shorcode-content {
+		font-size: 12px;
+	}
+
+	& .clipboard {
+		margin-left: 5px;
+		font-size: 19px;
+		cursor: pointer;
+		color: #364656;
+	}
+}
+
+body.taxonomy-helpie_faq_group {
+	#wpcontent {
+		padding: 0px;
+		.wrap {
+			margin: 0px;
+			h1 {
+				display: block !important;
+				background: #364656;
+				color: #fff;
+				padding: 15px;
+				margin: 0px;
+
+				&::after {
+					content: " ";
+					display: block;
+					width: 5%;
+					margin-top: 2px;
+					background: #00aeda;
+					border: 1px solid #00aeda;
+					border-radius: 50px;
+				}
+			}
+
+			// add new FAQ-Group button link
+			.hfaq-group__add--link {
+				color: #364656;
+				border: 1px solid #364656;
+				margin-left: 10px;
+				&:hover {
+					color: #364656;
+				}
+			}
+
+			form {
+				padding: 0px;
+
+				// for editing the FAQ-Group page
+				table {
+					&.form-table {
+						margin: 0px;
+						background: #f4f8fa;
+						border-collapse: separate;
+						padding: 5px 15px;
+
+						tr.form-field {
+							td {
+								padding: 10px 5px;
+							}
+						}
+					}
+				}
+				.edit-tag-actions {
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+}
+
+// Shortcode Clipboard Input Field
+.helpie-faq-groups-table {
+	.term-shortcode-wrap {
+		.shortcode-clipboard-field {
+			position: relative;
+
+			& input[id="faq-group-shortcode"] {
+				width: 100%;
+				border: none;
+			}
+
+			// FAQ-Group Shortcode Clipboard Field
+			#faq-group-shortcode:read-only {
+				background: #e2eef3;
+				margin: 0px;
+				border-radius: 0px;
+			}
+
+			& .clipboard-text {
+				position: absolute;
+				cursor: pointer;
+				padding: 0 8px;
+				line-height: 2;
+				min-height: 30px;
+				color: #fff;
+				background: #007cba;
+				border-color: #007cba;
+				right: 0px;
+				top: 0px;
+			}
+		}
+	}
+}
+
+.hfaq-groups-container {
+	max-width: 100%;
+	background: #fff;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+	padding: 15px;
+
+	.hfaq-groups__repeaters {
+		.csf-repeater-wrapper {
+			.csf-repeater-item {
+				border: 1px solid #f2f2f2;
+
+				.csf-repeater-helper {
+					background: #fff;
+					border-left: 0px;
+				}
+			}
+		}
+
+		.hfaq-groups__accordion {
+			.csf-accordion-title {
+				background: #fff;
+				border: 0px;
+				box-shadow: none;
+			}
+			.csf-accordion-open {
+				background: #fcfcfc;
+				border: 0px;
+				.csf-field {
+					border: 0px;
+				}
+			}
+			.post-status {
+				&--pending {
+					color: #ff0000;
+				}
+			}
+		}
+	}
+}
+
+// creating faq-group page
+.hfaq-group-page.hfaq-full-width {
+	&#col-left {
+		.col-wrap {
+			padding: 0px;
+		}
+		// hide the FAQ-Group form submit button label
+		.form-wrap {
+			h2 {
+				display: none;
+			}
+			.form-field {
+				margin: 0px;
+				background: #f4f8fa;
+				border-collapse: separate;
+				padding: 5px 15px;
+			}
+
+			p.submit {
+				padding-left: 15px;
+			}
+		}
+	}
+}
