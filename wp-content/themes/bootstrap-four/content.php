@@ -16,14 +16,11 @@
 
       comments_template();
 
-      get_template_part( 'postmeta' );
+     // get_template_part( 'postmeta' );
 
       if ( comments_open() ) :
 ?>
-        <div class="clearfix"></div>
-        <p class="text-right">
-            <a class="btn btn-primary" href="<?php the_permalink(); ?>#comments"><?php comments_number( __( 'Leave a Comment', 'bootstrap-four' ), __( 'One Comment', 'bootstrap-four' ), '%' . __( ' Comments', 'bootstrap-four' ) );?> <span class="fa fa-comments"></span></a>
-        </p>
+
 <?php
       endif;
 

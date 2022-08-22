@@ -167,6 +167,15 @@ header .text {
   left: 0;
   bottom: 0;
 }
+.helpie-faq.accordions .accordion .accordion__item .accordion__body p,
+.helpie-faq.accordions .accordion .accordion__item .accordion__body a {
+  font-family: 'iowanold';
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0;
+}
 .helpie-faq.accordions .search__input {
   height: 30px;
 }
