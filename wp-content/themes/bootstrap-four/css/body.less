@@ -37,7 +37,7 @@ header{
   &.accordions{
     .accordion{
       .accordion__item{
-        border-bottom:solid 1px @cf;
+        border-bottom: none;
         .accordion__header{
           padding: 15px 23px;
           &:before, &:after{
@@ -68,6 +68,27 @@ header{
           p,a{
             .font(@ff-size: 14px; @ff-family: @io );
             margin-top: 0;
+          }
+          ul{
+            padding-left: 0;
+            list-style-type: none;
+            li{
+              .font(@ff-size: 14px; @ff-family: @io );
+              display: flex;
+              margin-bottom: 10px;
+              &:before{
+                content: "";
+                display: inline-block;
+                height: 14px;
+                width: 14px;
+                background-image: url("../img/logo_little.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin-right: 7px;
+              }
+
+            }
           }
         }
       }

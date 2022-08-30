@@ -132,7 +132,7 @@ header .text {
   display: none;
 }
 .helpie-faq.accordions .accordion .accordion__item {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: none;
 }
 .helpie-faq.accordions .accordion .accordion__item .accordion__header {
   padding: 15px 23px;
@@ -175,6 +175,32 @@ header .text {
   line-height: 1.2;
   font-weight: 400;
   margin-top: 0;
+}
+.helpie-faq.accordions .accordion .accordion__item .accordion__body ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.helpie-faq.accordions .accordion .accordion__item .accordion__body ul li {
+  font-family: 'iowanold';
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.helpie-faq.accordions .accordion .accordion__item .accordion__body ul li:before {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-image: url("../img/logo_little.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 7px;
 }
 .helpie-faq.accordions .search__input {
   height: 30px;
