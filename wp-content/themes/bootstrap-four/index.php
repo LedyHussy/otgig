@@ -3,8 +3,8 @@
 <?php get_template_part( 'navigation', 'default' ); ?>
 
 <div class="container main-container">
-  <div class="row">
-    <div class="col-lg-12">
+  <div class="row ">
+    <div class="col-12">
 <?php
   if ( have_posts() ) :
     while ( have_posts() ) : the_post();

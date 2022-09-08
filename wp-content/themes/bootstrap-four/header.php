@@ -10,7 +10,9 @@
 </head>
 <header>
     <div class="container d-flex justify-content-center">
-        <img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" class="logo">
+        <a href="/">
+            <img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" class="logo">
+        </a>
         <p class="text">Попробуй историю<br>на вкус!</p>
     </div>
 </header>

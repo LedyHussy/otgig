@@ -25,7 +25,7 @@ header{
 }
 
 .text{
-  .font(@ff-family: @io, @ff-size: 12px, @ff-weight: 400);
+  .font(@ff-family: @io, @ff-size: 15px, @ff-weight: 400);
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -55,8 +55,8 @@ header{
           background: @dark !important;
           padding: 0 23px;
           position: relative;
+          padding-top: 15px;
           &:after{
-            content: "";
             position: absolute;
             display: block;
             height: 100%;
@@ -93,20 +93,61 @@ header{
         }
       }
     }
-    .search__input{
-      height: 30px;
-      &::placeholder{
-        .font(@ff-family: @mia; @ff-size: 14px; @ff-color: @c0 );
+    .search__wrapper{
+      .search__input{
+        height: 45px;
+        .font(@ff-family: @io; @ff-size: 14px; @ff-color: @c0; @ff-line: 30px );
+        &::placeholder{
+          .font(@ff-family: @io; @ff-size: 14px; @ff-color: @c0);
+        }
+        &:focus{
+          color: @c0;
+          ~ .search__icon{
+            background-image: url("../img/Union_hover.svg");
+          }
+        }
       }
-    }
-    .search__icon{
-      width: 20px;
-      height: 20px;
-      background-image: url("../img/Union.svg");
-      svg{
-        display: none !important;
+      .search__icon{
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/Union.svg");
+        transition: all ease-in-out 0.3s;
+        svg{
+          display: none !important;
+        }
+
+      }
+      &:hover{
+        .search__icon{
+          background-image: url("../img/Union_hover.svg");
+        }
       }
     }
 
+
+  }
+  .search__message__content{
+    .text;
+    margin-top: 20px;
+  }
+}
+
+.btn{
+  display: block;
+  height: 50px;
+  padding: 0 20px;
+  .font(@ff-line: 50px; @ff-color: @cf; @ff-family: @io);
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid @cf;
+  margin-bottom: 20px;
+  transition: all ease-in-out 0.3s;
+  @media(min-width: 768px){
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  &:hover{
+    border-color: @dark;
+    background-color: @dark;
   }
 }

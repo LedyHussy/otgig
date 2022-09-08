@@ -121,7 +121,7 @@ header .text {
 }
 .text {
   font-family: 'iowanold';
-  font-size: 12px;
+  font-size: 15px;
   color: #ffffff;
   line-height: 1.2;
   font-weight: 400;
@@ -156,9 +156,9 @@ header .text {
   background: #161a23 !important;
   padding: 0 23px;
   position: relative;
+  padding-top: 15px;
 }
 .helpie-faq.accordions .accordion .accordion__item .accordion__body:after {
-  content: "";
   position: absolute;
   display: block;
   height: 100%;
@@ -202,42 +202,94 @@ header .text {
   background-size: contain;
   margin-right: 7px;
 }
-.helpie-faq.accordions .search__input {
-  height: 30px;
+.helpie-faq.accordions .search__wrapper .search__input {
+  height: 45px;
+  font-family: 'iowanold';
+  font-size: 14px;
+  color: #000000;
+  line-height: 30px;
+  font-weight: 400;
 }
-.helpie-faq.accordions .search__input::-webkit-input-placeholder {
-  font-family: "miamanueva";
+.helpie-faq.accordions .search__wrapper .search__input::-webkit-input-placeholder {
+  font-family: 'iowanold';
   font-size: 14px;
   color: #000000;
   line-height: 1.2;
   font-weight: 400;
 }
-.helpie-faq.accordions .search__input:-ms-input-placeholder {
-  font-family: "miamanueva";
+.helpie-faq.accordions .search__wrapper .search__input:-ms-input-placeholder {
+  font-family: 'iowanold';
   font-size: 14px;
   color: #000000;
   line-height: 1.2;
   font-weight: 400;
 }
-.helpie-faq.accordions .search__input::-ms-input-placeholder {
-  font-family: "miamanueva";
+.helpie-faq.accordions .search__wrapper .search__input::-ms-input-placeholder {
+  font-family: 'iowanold';
   font-size: 14px;
   color: #000000;
   line-height: 1.2;
   font-weight: 400;
 }
-.helpie-faq.accordions .search__input::placeholder {
-  font-family: "miamanueva";
+.helpie-faq.accordions .search__wrapper .search__input::placeholder {
+  font-family: 'iowanold';
   font-size: 14px;
   color: #000000;
   line-height: 1.2;
   font-weight: 400;
 }
-.helpie-faq.accordions .search__icon {
+.helpie-faq.accordions .search__wrapper .search__input:focus {
+  color: #000000;
+}
+.helpie-faq.accordions .search__wrapper .search__input:focus ~ .search__icon {
+  background-image: url("../img/Union_hover.svg");
+}
+.helpie-faq.accordions .search__wrapper .search__icon {
   width: 20px;
   height: 20px;
   background-image: url("../img/Union.svg");
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
-.helpie-faq.accordions .search__icon svg {
+.helpie-faq.accordions .search__wrapper .search__icon svg {
   display: none !important;
+}
+.helpie-faq.accordions .search__wrapper:hover .search__icon {
+  background-image: url("../img/Union_hover.svg");
+}
+.helpie-faq .search__message__content {
+  font-family: 'iowanold';
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.btn {
+  display: block;
+  height: 50px;
+  padding: 0 20px;
+  font-family: 'iowanold';
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 50px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #ffffff;
+  margin-bottom: 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+@media (min-width: 768px) {
+  .btn {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+.btn:hover {
+  border-color: #161a23;
+  background-color: #161a23;
 }

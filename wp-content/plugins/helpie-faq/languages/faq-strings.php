@@ -14,7 +14,7 @@ if (!class_exists('\HelpieFaq\Languages\FAQ_Strings')) {
             $strings = array(
                 'hide' => __("Hide", "helpie-faq"),
                 'addFAQ' => __("Add FAQ", "helpie-faq"),
-                'noFaqsFound' => __('No FAQ found', 'helpie-faq'),
+                'noFaqsFound' => __('К сожалению ничего не найдено', 'helpie-faq'),
             );
 
             return $strings;
